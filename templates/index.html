@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax Time Web App</title>
+    </head>
+
+    <h1>Build Web App Using Flask and SQLite</h1>
+    <form method="POST" action = "{{ url_for('calculating_tax') }}"">
+        <button type="submit" name="calculate" value="clicked">Calculate Tax</button><br>
+    </form>
+    <form method="POST" action = "{{ url_for('exporting_spreadsheet') }}"">
+        <button type="submit" name="export" value="clicked">Export Results</button><br>
+    </form>
+</html>
